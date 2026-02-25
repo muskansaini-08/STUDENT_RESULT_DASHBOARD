@@ -1,124 +1,116 @@
-🎓 Student Performance Analysis & Dashboard
-📌 Project Overview
+# 🎓 Student Performance Analysis & Interactive Dashboard
 
-This project focuses on analyzing student academic performance using data analysis and visualization techniques. It includes data preprocessing, outlier detection, categorical encoding, correlation analysis, and an interactive dashboard built with Streamlit.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
-The main objective is to understand the factors affecting students' final exam marks and visualize key insights.
+---
 
-📂 Dataset Information
+## 📌 Project Overview
 
-The dataset contains student-related information such as:
+This project performs **Exploratory Data Analysis (EDA)** on a student performance dataset and builds an **interactive Streamlit dashboard** to visualize key academic insights.
 
-Study Hours
+The goal is to analyze factors affecting students' **Final Exam Marks** and present meaningful insights through data visualization and filtering.
 
-Attendance Percentage
+---
 
-Gender
+## 📂 Dataset Description
 
-Internet Access
+The dataset includes the following features:
 
-Extracurricular Activities
+- 📚 Study Hours  
+- 🏫 Attendance Percentage  
+- 👩‍🎓 Gender  
+- 🌐 Internet Access  
+- 🎯 Extracurricular Activities  
+- 💰 Family Income  
+- 📝 Final Exam Marks *(Target Variable)*  
 
-Family Income
+---
 
-Final Exam Marks (Target Variable)
+## 🛠️ Tech Stack
 
-⚙️ Technologies Used
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Seaborn**
+- **Streamlit**
 
-Python 🐍
+---
 
-Pandas
+## 🔎 Project Workflow
 
-NumPy
+### 1️⃣ Data Loading
+- Loaded dataset using Pandas
+- Checked dataset shape and structure
+- Analyzed summary statistics
 
-Matplotlib
+### 2️⃣ Data Cleaning
+- Checked for missing values
+- Checked for duplicate values
+- Confirmed dataset integrity
 
-Seaborn
+### 3️⃣ Outlier Detection & Removal
+- Used **IQR (Interquartile Range)** method
+- Removed outlier from `final_exam_marks`
+- Verified using boxplots
 
-Streamlit
+### 4️⃣ Encoding Categorical Variables
+- **One-Hot Encoding** for:
+  - Gender
+  - Internet Access
+  - Extracurricular Activities
 
-🔎 Project Workflow
-1️⃣ Data Loading
+- **Ordinal Encoding** for:
+  - Family Income (Low < Medium < High)
 
-Dataset loaded using Pandas.
+### 5️⃣ Correlation Analysis
+- Generated correlation heatmap
+- Identified strong positive relationship between:
+  - Study Hours
+  - Final Exam Marks
 
-Checked shape, info, and summary statistics.
+### 6️⃣ Data Visualization
+- Distribution of Final Marks
+- Study Hours vs Final Marks (Scatter Plot)
+- Attendance vs Final Marks
+- Gender vs Final Marks
+- Family Income vs Final Marks
 
-2️⃣ Data Cleaning
+---
 
-Checked for missing values.
+## 📊 Interactive Streamlit Dashboard
 
-Checked for duplicate values.
+The project includes a dynamic dashboard with:
 
-No missing or duplicate values found.
+### ✅ Key Performance Indicators
+- Total Students
+- Average Marks
+- Highest Marks
 
-3️⃣ Outlier Detection & Removal
+### 🔎 Sidebar Filter
+- Study Hours Range Slider
 
-Used IQR (Interquartile Range) method.
+### 📈 Visualizations
+- Scatter Plot (Study Hours vs Marks)
+- Histogram (Marks Distribution)
+- Correlation Heatmap
 
-Removed outlier from final_exam_marks.
+### 💡 Insights Section
+- Highlights performance trends
+- Shows correlation impact
 
-Verified removal using boxplot.
+---
 
-4️⃣ Encoding Categorical Variables
+## 🚀 How to Run the Project
 
-Applied One Hot Encoding for nominal variables:
+### 1️⃣ Clone the Repository
 
-Gender
-
-Internet Access
-
-Extracurricular Activities
-
-Applied Ordinal Encoding for:
-
-Family Income (Low < Medium < High)
-
-5️⃣ Correlation Analysis
-
-Generated correlation heatmap.
-
-Identified relationship between study hours and final marks.
-
-6️⃣ Data Visualization
-
-Distribution of final marks.
-
-Study Hours vs Final Marks (Scatter Plot)
-
-Attendance vs Final Marks
-
-Gender vs Final Marks
-
-Family Income vs Final Marks
-
-📊 Streamlit Dashboard Features
-
-The project includes an interactive dashboard with:
-
-📌 Key Performance Indicators:
-
-Total Students
-
-Average Marks
-
-Highest Marks
-
-🔎 Sidebar Filters:
-
-Study Hours Range Filter
-
-📈 Visualizations:
-
-Scatter Plot (Study Hours vs Marks)
-
-Histogram (Marks Distribution)
-
-Correlation Heatmap
-
-💡 Insights Section:
-
-Highlights relationship between study hours and performance.
+```bash
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
 
 🚀 How to Run the Project
 Step 1: Install Required Libraries
