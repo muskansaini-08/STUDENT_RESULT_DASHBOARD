@@ -11,8 +11,7 @@ import matplotlib.pyplot as plt
 
 # In[14]:
 
-
-df = pd.read_csv(r"D:\Sample Data\student_dataset.csv")
+df = pd.read_csv("student_dataset.csv")
 df.head()
 
 
