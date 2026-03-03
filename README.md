@@ -4,28 +4,50 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+![Deployed](https://img.shields.io/badge/Deployment-Live-success)
+
+---
+
+## 🚀 Live Deployment
+
+🌐 **Live Streamlit App:**  
+👉 https://student-result-dashboard.streamlit.app/
+
+This project has been successfully deployed using **Streamlit Cloud**, allowing users to interact with the dashboard in real time.
 
 ---
 
 ## 📌 Project Overview
 
-This project performs **Exploratory Data Analysis (EDA)** on a student performance dataset and builds an **interactive Streamlit dashboard** to visualize key academic insights.
+This project performs **Exploratory Data Analysis (EDA)** on a student performance dataset and builds an **interactive Streamlit dashboard** to visualize academic insights.
 
-The goal is to analyze factors affecting students' **Final Exam Marks** and present meaningful insights through data visualization and filtering.
+The objective is to analyze the factors affecting students' **Final Exam Marks** and present meaningful trends through interactive visualizations and filtering mechanisms.
 
 ---
 
-## 📂 Dataset Description
+## 🎯 Problem Statement
 
-The dataset includes the following features:
+Understanding the factors that influence student academic performance helps in:
 
-- 📚 Study Hours  
-- 🏫 Attendance Percentage  
-- 👩‍🎓 Gender  
-- 🌐 Internet Access  
-- 🎯 Extracurricular Activities  
-- 💰 Family Income  
-- 📝 Final Exam Marks *(Target Variable)*  
+- Identifying key performance drivers
+- Improving study strategies
+- Supporting data-driven academic decisions
+
+This project explores how variables such as study hours, attendance, family income, and extracurricular activities impact final exam performance.
+
+---
+
+## 📂 Dataset Features
+
+The dataset contains the following attributes:
+
+- 📚 **Study Hours**
+- 🏫 **Attendance Percentage**
+- 👩‍🎓 **Gender**
+- 🌐 **Internet Access**
+- 🎯 **Extracurricular Activities**
+- 💰 **Family Income**
+- 📝 **Final Exam Marks** *(Target Variable)*
 
 ---
 
@@ -45,16 +67,16 @@ The dataset includes the following features:
 ### 1️⃣ Data Loading
 - Loaded dataset using Pandas
 - Checked dataset shape and structure
-- Analyzed summary statistics
+- Generated summary statistics
 
 ### 2️⃣ Data Cleaning
-- Checked for missing values
-- Checked for duplicate values
-- Confirmed dataset integrity
+- Identified missing values
+- Checked for duplicate records
+- Ensured dataset consistency
 
 ### 3️⃣ Outlier Detection & Removal
-- Used **IQR (Interquartile Range)** method
-- Removed outlier from `final_exam_marks`
+- Applied **IQR (Interquartile Range)** method
+- Removed outliers from `final_exam_marks`
 - Verified using boxplots
 
 ### 4️⃣ Encoding Categorical Variables
@@ -81,70 +103,129 @@ The dataset includes the following features:
 
 ---
 
-## 📊 Interactive Streamlit Dashboard
+## 📊 Interactive Dashboard Features
 
-The project includes a dynamic dashboard with:
-
-### ✅ Key Performance Indicators
+### ✅ Key Performance Indicators (KPIs)
 - Total Students
 - Average Marks
 - Highest Marks
 
-### 🔎 Sidebar Filter
+### 🔎 Sidebar Filters
 - Study Hours Range Slider
 
-### 📈 Visualizations
+### 📈 Visualizations Included
 - Scatter Plot (Study Hours vs Marks)
 - Histogram (Marks Distribution)
 - Correlation Heatmap
 
 ### 💡 Insights Section
-- Highlights performance trends
-- Shows correlation impact
+- Highlights major performance trends
+- Displays correlation findings
+- Helps understand academic impact factors
 
 ---
 
-## 🚀 How to Run the Project
+## 🎯 Key Insights
+
+- Students who study more hours tend to score higher.
+- There is a strong positive correlation between study hours and final exam marks.
+- Family income shows moderate influence on academic performance.
+- Marks distribution is moderately spread across students.
+
+---
+
+## 🏗️ Project Structure
+
+```
+Student-Performance-Analysis/
+│
+├── student_dataset.csv
+├── student_analysis.py
+├── student_dashboard.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🚀 How to Run the Project Locally
 
 ### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/your-repository-name.git
 cd your-repository-name
+```
 
-🚀 How to Run the Project
-Step 1: Install Required Libraries
+### 2️⃣ Install Required Libraries
+
+```bash
 pip install pandas numpy matplotlib seaborn streamlit
-Step 2: Run the Streamlit App
-streamlit run your_script_name.py
-🎯 Key Insights
+```
 
-Students who study more hours tend to score higher.
+OR (if using requirements file):
 
-Positive correlation between study hours and final exam marks.
+```bash
+pip install -r requirements.txt
+```
 
-Family income shows some influence on performance.
+### 3️⃣ Run the Streamlit App
 
-Marks distribution is moderately spread.
+```bash
+streamlit run student_dashboard.py
+```
 
-📁 Project Structure
-Student-Performance-Analysis/
-│
-├── student_dataset.csv
-├── student_analysis.py
-├── student_dashboard.py
-└── README.md
-📌 Future Improvements
+The application will open in your browser at:
 
-Add Machine Learning model for marks prediction.
+```
+http://localhost:8501
+```
 
-Deploy dashboard online.
+---
 
-Add more interactive filters.
+## 🌐 Deployment Details
 
-Improve UI design.
+- Platform Used: **Streamlit Cloud**
+- Live URL: https://student-result-dashboard.streamlit.app/
+- Public Access: Enabled
+- Real-time interactive filtering supported
 
-👩‍💻 Author
+---
 
-Muskan Saini
-AIML Student
+## 📌 Future Improvements
+
+- Add Machine Learning model for marks prediction
+- Integrate advanced statistical analysis
+- Add downloadable reports
+- Improve UI/UX design
+- Add multi-filter comparison
+- Deploy using custom domain
+
+---
+
+## 📈 Skills Demonstrated
+
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature Encoding Techniques
+- Outlier Detection
+- Correlation Analysis
+- Data Visualization
+- Interactive Dashboard Development
+- Cloud Deployment
+
+---
+
+## 👩‍💻 Author
+
+**Muskan Saini**  
+B.Tech CSE (AI & ML) Student  
+Passionate about Data Science & Machine Learning  
+
+🔗 Live App: https://student-result-dashboard.streamlit.app/
+
+---
+
+## ⭐ If You Like This Project
+
+Give it a ⭐ on GitHub to show support!
